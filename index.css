@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #112d4e;
+    background: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    color: #F9F7F7;
+}
+
+.heading {
+    font-size: 3rem;
+    text-align: center;
+    margin-block: 2rem;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 1.75px;
+}
+
+.navbar {
+    width: 30%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar p {
+    font-size: 1.4rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+
+.active_tab {
+    background-color: #3f72af;
+    border-radius: 5px;
+}
+
+.navbar p:hover {
+    cursor: pointer;
+}
+
+.permision {
+    opacity: 1;
+    width: 30%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.deactive {
+    opacity: 0;
+}
+
+.permision img {
+    margin-bottom: 2rem;
+}
+
+.permision h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+}
+
+.permision p {
+    font-size: 1.35rem;
+    font-weight: 300;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
+.permision_btn {
+    background-color: #3f72af;
+    padding: 10px 30px;
+    border: 1px solid #3f72af;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.permision_btn:hover {
+    cursor: pointer;
+}
+
+.search {
+    display: none !important;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    position: absolute;
+    top: 17%;
+    left: 35%;
+    display: flex;
+}
+
+.search img {
+    padding-left: 5px;
+    padding-top: 5px;
+    object-fit: cover;
+    color: white;
+}
+
+.img_div {
+    border: none;
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 2.9rem;
+    height: 2.9rem;
+    background-color: #3f72af;
+    border-radius: 50%;
+}
+
+.img_div:hover {
+    cursor: pointer;
+}
+
+.input_city {
+    width: 90%;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-color: transparent;
+}
+
+.input_city::placeholder {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.city_name {
+    font-size: 3rem;
+}
+
+.content {
+    display: none !important;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 33%;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+.content_search {
+    top: 30%;
+}
+
+
+
+.content h1 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.content .mode {
+    text-align: center;
+}
+
+.content .temperature {
+    text-align: center;
+}
+
+.mode {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.temperature {
+    margin-top: 2rem;
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
+.details {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details div {
+    width: 32%;
+    max-width: 200px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 5px;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px 0;
+}
+
+.details div p {
+    padding: 0 0.7rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.loading {
+    display: none !important;
+    position: absolute;
+    top: 23%;
+    left: 43%;
+    text-align: center;
+}
+.loading p {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.75rem;
+}
+
+.active {
+    display: block !important;
+}
